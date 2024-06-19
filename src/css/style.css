@@ -1,0 +1,334 @@
+body{ 
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Roboto;
+    src: url('/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: Roboto2;
+    src: url('/fonts/Roboto-Thin.ttf');
+}
+
+/* TRIAGE */
+
+.seccionTriage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#2e5efb ;
+    height: 100vh;
+    font-family: Roboto;
+    color: white;
+}
+.seccionTriage__contenedor{
+    display: flex;
+    justify-content: space-around;
+    width:70%; 
+    height: 90vh;
+    gap: 4rem; 
+    row-gap: 0;
+}
+.seccionTriage__contenido{
+    display: flex;
+    flex-direction: column;
+}
+.imagenTriage{
+    width: 4rem;
+    margin: 4rem 0 1rem 0;
+    padding: 0;
+}
+.seccionTriage__titulo{
+    font-size: 3rem;
+    margin: 1rem 12rem 1rem 0;
+}
+.seccionTriage__texto{
+    margin:0 12rem 1rem 0;
+    color: rgba(255, 255, 255, 0.663);
+    font-family: Roboto2;
+    font-size: 1.5rem;
+}
+.descargar{
+    width: 12rem;
+    margin: 1rem 0;
+}
+.imagenTelefono{
+    height: 90vh;
+    margin: 2.2rem 2rem 0 0;
+}
+/* DRAG LEFT */
+.seccionDragLeft{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #ff2d55;
+    color: white;
+    font-family: Roboto;
+}
+.seccionDragLeft__contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 70%;
+    height: auto;
+}
+.seccionDragLeft__contenido{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0 0 6rem;
+}
+.seccionDragLeft__flecha{
+    margin-top: 5rem;
+    width: 3rem;
+
+}
+.seccionDragLeft__telefono{
+   margin: 0 10rem 8rem 12rem;
+   
+}
+.seccionDragLeft__titulo{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+
+}
+.seccionDragLeft__texto{
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.663);
+    font-family: Roboto2;
+    margin: 0 1rem 0 0;
+}
+
+/* DRAG RIGHT */
+.seccionDragRight{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    height: 100vh;
+    background-color: black;
+    font-family: Roboto;
+}
+.seccionDragRight__contenedor{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+    gap: 15rem;
+}
+.seccionDragRight__contenido{
+    margin: 6rem 0 0 12rem;
+    width: 50%;
+}
+.seccionDragRight__flecha{
+    width: 3rem;
+}
+.seccionDragRight__titulo{
+    font-size: 2rem;
+}
+.seccionDragRight__texto{
+    font-family: Roboto2;
+    font-size: 1.5rem;
+}
+.seccionDragRight__telefono{
+    width: 40%;
+    margin: 0 0 5rem 0;
+}
+/* TAPS */
+.seccionTap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    height: 100vh;
+    color: white;
+    background-color: #ffb800;
+}
+.seccionTap__contenedor{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.seccionTap__contenido{
+    display: flex;
+    flex-direction: column;
+    margin: 5.5rem 0 0 0;
+    padding: 0 0 0 5rem;
+    
+}
+.seccionTap__felcha{
+    width: 3rem;
+    margin: 0;
+}
+.seccionTap__titulo{
+    font-size: 2rem;
+    color: black;
+    margin: 0.5rem 0;
+}
+.seccionTap__texto{
+    font-size: 1.7rem;
+    margin:0;
+    width: 60%;
+    font-family: Roboto2;
+    color: black;
+}
+.seccionTap__telefono{
+    margin: 5rem 12rem 0 0;
+    width: 40%;
+}
+/* REPLY */
+.seccionReply{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    height: 100vh;
+    font-family: Roboto;
+    background-color: #7000ff;
+}
+.seccionReply__contenedor{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    padding-top: 3rem;
+}
+.seccionReply__contenido{
+    display: flex;
+    flex-direction: column;
+    margin: 9rem 0 0 0;
+    padding: 0 0 0 1rem;
+    
+}
+.seccionReply__flecha{
+    width: 3rem;
+    margin: 0;
+}
+.seccionReply__titulo{
+    font-size: 2rem;
+    color: white;
+    margin: 1rem 0;
+}
+.seccionReply__texto{
+    font-size: 1.7rem;
+    margin:0;
+    width: 90%;
+    font-family: Roboto2;
+    color: white;
+}
+.seccionReply__telefono{
+    margin: 8.5rem 0 0 8rem  ;
+    width: 33%;
+}
+
+/* COLORS */
+
+.seccionColors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    font-family: Roboto;
+    color: white;
+}
+.seccionColors__contenedor{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 2;
+    gap: 1rem;
+    margin: 2.5rem;
+    width: 60%;
+}
+.seccionColors__card{
+    border-radius: 10px;
+    padding: 1rem;
+    font-weight: bold;
+}
+.seccionColors__image{
+    width: 2rem;
+}
+.seccionColors__texto{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+/* PRAISE */
+.seccionPraise{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto;
+    width: 100%;
+    height: 90vh;
+    margin: 2rem 0;
+
+}
+
+.seccionPraise__contenedor{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 2;
+    gap: 1rem;
+    margin: 1rem;
+    width: 60%;
+    height: 50vh;
+}
+
+.praise{
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: whitesmoke;
+    text-align: left;
+}
+.seccionPraise__texto{
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+.seccionPraise_img{
+    margin: 1rem;
+    width: 50%;
+
+}
+
+.seccionPraise__titulo{
+    text-align: left;
+    font-size: 2rem;
+    width: 60%;
+}
+/* FOOTER/CONTACTO */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer__contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.footer__lista {
+    margin: 10px;
+    color: rgb(57, 57, 57);
+    font-family: Roboto;
+    font-size: 14px;
+}
+
+.contacto {
+    text-align: center; 
+    margin: 0.5rem;
+}
+
+.contacto__contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto__contenedorImg{
+    width: 1rem;
+    margin: 0 0 0 0.6rem;
+}
